@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sp.fc.Test1" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-30T16:05:04" hostname="DESKTOP-2NULK4K" time="0.017">
+  <properties/>
+  <testcase name="test_1()" classname="com.sp.fc.Test1" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

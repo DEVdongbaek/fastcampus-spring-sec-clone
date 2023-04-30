@@ -1,0 +1,10 @@
+server:
+  port: 9050
+
+spring:
+  security:
+    # 접근 가능한 유저 생성 (application.yml에는 1명만 생성 가능)
+    user:
+      name: user1
+      password: 1111
+      roles: USER

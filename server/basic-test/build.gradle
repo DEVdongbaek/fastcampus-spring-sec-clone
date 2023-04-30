@@ -1,0 +1,8 @@
+
+
+dependencies {
+    implementation("$boot:spring-boot-starter-web") // 웹 에플리케이션 생성 가능
+    implementation project(path: ':comp-common-utils')
+
+}
+
