@@ -39,9 +39,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         // "/"주소로 온 http 요청에 대해서는 허용하고, 다른 모든 요청들은 인증을 요한다.
-        http.authorizeRequests((requests) ->
+        /*http.authorizeRequests((requests) ->
                 requests.antMatchers("/").permitAll()
                         .anyRequest().authenticated()
-                );
+                );*/
+        http
+                .headers().disable()
+                .csrf().disable()
+                .formLogin(login ->
+                        login.defaultSuccessUrl("/", false));
     }
 }
